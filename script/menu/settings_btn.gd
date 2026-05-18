@@ -3,6 +3,7 @@ extends Button
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	pass # Replace with function body.
 
 
@@ -12,5 +13,5 @@ func _process(_delta: float) -> void:
 
 
 func _on_button_up() -> void:
-	get_tree().change_scene_to_file("res://scenes/credits.tscn")
+	get_tree().change_scene_to_file("res://scenes/settings_menu.tscn")
 	pass # Replace with function body.

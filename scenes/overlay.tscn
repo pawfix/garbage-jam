@@ -44,9 +44,6 @@ vertical_icon_alignment = 0
 layout_mode = 2
 alignment = 1
 
-[node name="gems" type="Label" parent="sideOverlay/balanceOverlay" unique_id=976336230]
-layout_mode = 2
-
 [node name="balanceContainer" type="HBoxContainer" parent="sideOverlay/balanceOverlay" unique_id=476191450]
 layout_mode = 2
 
