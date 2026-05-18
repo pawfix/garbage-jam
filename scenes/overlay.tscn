@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://fpxfcb4wyp8m"]
+
+[ext_resource type="Script" uid="uid://i4h7buy0rgnm" path="res://script/overlay/overlay.gd" id="1_d607a"]
+[ext_resource type="Texture2D" uid="uid://dg4dwadq47fjw" path="res://assets/icons/shop.png" id="2_sfd0e"]
+[ext_resource type="Texture2D" uid="uid://dxe6as5l3yylt" path="res://assets/icons/coin.png" id="3_p5j10"]
+[ext_resource type="FontFile" uid="uid://dqnw3gcwvuq8q" path="res://assets/fonts/aseprite.otf" id="4_p5j10"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_d607a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p5j10"]
+font = ExtResource("4_p5j10")
+
+[node name="overlay" type="Control" unique_id=142090825]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d607a")
+
+[node name="sideOverlay" type="VBoxContainer" parent="." unique_id=858053578]
+material = SubResource("CanvasItemMaterial_d607a")
+layout_direction = 2
+layout_mode = 0
+offset_right = 75.0
+offset_bottom = 720.0
+alignment = 1
+
+[node name="shopButton" type="Button" parent="sideOverlay" unique_id=105768413]
+layout_mode = 2
+text = "shop"
+icon = ExtResource("2_sfd0e")
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="settingsBtn" type="Button" parent="sideOverlay" unique_id=427721594]
+layout_mode = 2
+text = "settings"
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="balanceOverlay" type="VBoxContainer" parent="sideOverlay" unique_id=1506429257]
+layout_mode = 2
+alignment = 1
+
+[node name="gems" type="Label" parent="sideOverlay/balanceOverlay" unique_id=976336230]
+layout_mode = 2
+
+[node name="balanceContainer" type="HBoxContainer" parent="sideOverlay/balanceOverlay" unique_id=476191450]
+layout_mode = 2
+
+[node name="balanceIcon" type="TextureRect" parent="sideOverlay/balanceOverlay/balanceContainer" unique_id=791744277]
+layout_mode = 2
+texture = ExtResource("3_p5j10")
+
+[node name="balanceLabel" type="Label" parent="sideOverlay/balanceOverlay/balanceContainer" unique_id=1664534706]
+layout_mode = 2
+text = "Balance:"
+label_settings = SubResource("LabelSettings_p5j10")
