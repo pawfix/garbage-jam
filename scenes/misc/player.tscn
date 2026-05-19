@@ -397,3 +397,6 @@ animation = &"move_up"
 [node name="playerColl" type="CollisionShape2D" parent="playerBody" unique_id=1919484700]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_25qew")
+
+[node name="Camera2D" type="Camera2D" parent="playerBody" unique_id=1641747062]
+zoom = Vector2(2, 2)

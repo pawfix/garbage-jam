@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://d02upm7vlxiyj"]
+
+[ext_resource type="Script" uid="uid://bcun2le85sr2w" path="res://script/settings/save_button.gd" id="1_mus2x"]
+[ext_resource type="Script" uid="uid://bj3uwp402cyyt" path="res://script/settings/load_button.gd" id="2_qn74w"]
+[ext_resource type="Script" uid="uid://cem62egsjmxoo" path="res://script/settings/return_btn.gd" id="3_qn74w"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_owc20"]
+font_size = 32
+outline_size = 3
+outline_color = Color(0.05882353, 0.05882353, 0.05882353, 1)
+
+[node name="savesMenu" type="Control" unique_id=868129318]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="mainContainer" type="VBoxContainer" parent="." unique_id=1937630540]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="saveLabel" type="Label" parent="mainContainer" unique_id=1975624194]
+layout_mode = 2
+text = "SAVE & LOAD"
+label_settings = SubResource("LabelSettings_owc20")
+horizontal_alignment = 1
+
+[node name="saveOptions" type="VBoxContainer" parent="mainContainer" unique_id=1579281368]
+layout_mode = 2
+
+[node name="saveButton" type="Button" parent="mainContainer/saveOptions" unique_id=1085914513]
+layout_mode = 2
+text = "Save"
+script = ExtResource("1_mus2x")
+
+[node name="loadButton" type="Button" parent="mainContainer/saveOptions" unique_id=1803293001]
+layout_mode = 2
+text = "Load"
+script = ExtResource("2_qn74w")
+
+[node name="returnBtn" type="Button" parent="mainContainer/saveOptions" unique_id=830948452]
+layout_mode = 2
+text = "Return"
+script = ExtResource("3_qn74w")
+
+[connection signal="button_up" from="mainContainer/saveOptions/saveButton" to="mainContainer/saveOptions/saveButton" method="_on_button_up"]
+[connection signal="button_up" from="mainContainer/saveOptions/loadButton" to="mainContainer/saveOptions/loadButton" method="_on_button_up"]
+[connection signal="button_up" from="mainContainer/saveOptions/returnBtn" to="mainContainer/saveOptions/returnBtn" method="_on_button_up"]

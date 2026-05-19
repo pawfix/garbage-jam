@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://bj15ogf1k6a43" path="res://script/menu/start_btn.gd" id="2_48ign"]
 [ext_resource type="Script" uid="uid://b3kjb24orss3y" path="res://script/menu/settings_btn.gd" id="3_7nrmo"]
 [ext_resource type="Script" uid="uid://d022ul6wkx3fo" path="res://script/menu/credits_btn.gd" id="3_l7wge"]
+[ext_resource type="Script" uid="uid://3d7uipdqsg27" path="res://script/menu/saves_btn.gd" id="5_clbkb"]
 
 [node name="Control" type="Control" unique_id=407405637]
 layout_mode = 3
@@ -46,6 +47,11 @@ layout_mode = 2
 text = "start"
 script = ExtResource("2_48ign")
 
+[node name="savesBtn" type="Button" parent="VBoxContainer" unique_id=1125947561]
+layout_mode = 2
+text = "Saves"
+script = ExtResource("5_clbkb")
+
 [node name="settingsBtn" type="Button" parent="VBoxContainer" unique_id=740456566]
 layout_mode = 2
 text = "Settings"
@@ -62,6 +68,7 @@ text = "Quit"
 script = ExtResource("2_3d1i7")
 
 [connection signal="button_up" from="VBoxContainer/startBtn" to="VBoxContainer/startBtn" method="_on_button_up"]
+[connection signal="button_up" from="VBoxContainer/savesBtn" to="VBoxContainer/savesBtn" method="_on_button_up"]
 [connection signal="button_up" from="VBoxContainer/settingsBtn" to="VBoxContainer/settingsBtn" method="_on_button_up"]
 [connection signal="button_up" from="VBoxContainer/CreditsBtn" to="VBoxContainer/CreditsBtn" method="_on_button_up"]
 [connection signal="button_up" from="VBoxContainer/quitBtn" to="VBoxContainer/quitBtn" method="_on_button_up"]
