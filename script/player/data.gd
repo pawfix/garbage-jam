@@ -15,3 +15,8 @@ extends Node2D
 @export var settings = {
 	toggleMusic = true
 }
+
+@export var inventory = {
+	double_jump = false,
+	sprint = false
+}

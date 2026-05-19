@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://fpxfcb4wyp8m"]
 
 [ext_resource type="Script" uid="uid://i4h7buy0rgnm" path="res://script/overlay/overlay.gd" id="1_d607a"]
-[ext_resource type="Texture2D" uid="uid://dg4dwadq47fjw" path="res://assets/icons/shop.png" id="2_sfd0e"]
 [ext_resource type="Texture2D" uid="uid://dxe6as5l3yylt" path="res://assets/icons/coin.png" id="3_p5j10"]
 [ext_resource type="FontFile" uid="uid://dqnw3gcwvuq8q" path="res://assets/fonts/aseprite.otf" id="4_p5j10"]
 
@@ -26,13 +25,6 @@ layout_mode = 0
 offset_right = 100.0
 offset_bottom = 720.0
 alignment = 1
-
-[node name="shopButton" type="Button" parent="sideOverlay" unique_id=105768413]
-layout_mode = 2
-text = "shop"
-icon = ExtResource("2_sfd0e")
-icon_alignment = 1
-vertical_icon_alignment = 0
 
 [node name="settingsBtn" type="Button" parent="sideOverlay" unique_id=427721594]
 layout_mode = 2
