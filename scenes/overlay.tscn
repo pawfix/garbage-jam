@@ -47,3 +47,23 @@ texture = ExtResource("3_p5j10")
 layout_mode = 2
 text = "Balance:"
 label_settings = SubResource("LabelSettings_p5j10")
+
+[node name="textContainer" type="HBoxContainer" parent="." unique_id=699558814]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -0.5
+offset_top = -16.0
+offset_right = 0.5
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="textSprite" type="AnimatedSprite2D" parent="textContainer" unique_id=909216250]
+
+[node name="textLabel" type="Label" parent="textContainer" unique_id=202187795]
+layout_mode = 2
+horizontal_alignment = 1

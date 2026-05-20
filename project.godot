@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Data="*uid://c1rmjmrqu1q4h"
 Anim="*uid://bx6es8fumxf6v"
+Text="*uid://1wbaho2t33do"
 
 [display]
 
