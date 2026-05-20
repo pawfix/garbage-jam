@@ -17,6 +17,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_d607a")
+metadata/_edit_horizontal_guides_ = [-420.0]
 
 [node name="sideOverlay" type="VBoxContainer" parent="." unique_id=858053578]
 material = SubResource("CanvasItemMaterial_d607a")
@@ -49,6 +50,7 @@ text = "Balance:"
 label_settings = SubResource("LabelSettings_p5j10")
 
 [node name="textContainer" type="HBoxContainer" parent="." unique_id=699558814]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5

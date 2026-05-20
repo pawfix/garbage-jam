@@ -17,7 +17,7 @@ extends Node2D
 }
 
 @export var inventory = {
-	"double_jump": false,
+	"double_jump": true,
 	"sprint": false
 }
 
