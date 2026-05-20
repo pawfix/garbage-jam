@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Data="*uid://c1rmjmrqu1q4h"
+Anim="*uid://bx6es8fumxf6v"
 
 [display]
 

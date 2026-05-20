@@ -15,10 +15,11 @@ func _on_body_entered(body: Node2D) -> void:
 	if !wasEntered:
 		wasEntered = true
 		return
-	foreground.enabled = false
+	Anim.fadeOutAnim(foreground, false)
+	#foreground.enabled = false
 	print("Entered secret")
 
 
 func _on_body_exited(body: Node2D) -> void:
-	foreground.enabled = true
+	Anim.fadeOutAnim(foreground, true)
 	print("Left Secret")
