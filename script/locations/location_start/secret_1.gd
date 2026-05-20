@@ -16,7 +16,6 @@ func _on_body_entered(body: Node2D) -> void:
 		wasEntered = true
 		return
 	Anim.fadeOutAnim(foreground, false)
-	#foreground.enabled = false
 	print("Entered secret")
 
 
