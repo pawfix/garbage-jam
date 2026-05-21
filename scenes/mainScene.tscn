@@ -8,5 +8,7 @@
 [node name="locationStart" parent="." unique_id=1932518476 instance=ExtResource("1_twn0q")]
 
 [node name="player" parent="." unique_id=1663310333 instance=ExtResource("2_8ifl6")]
+z_index = 4
+z_as_relative = false
 position = Vector2(450, 522)
 scale = Vector2(2, 2)
