@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://b6ptl4dgskglo"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_3emm8"]
+
 [node name="catPickup" type="Node2D" unique_id=1487954033]
 
 [node name="catSprite" type="AnimatedSprite2D" parent="." unique_id=956761288]
+position = Vector2(270, 0)
+sprite_frames = SubResource("SpriteFrames_3emm8")
 
 [node name="catArea" type="Area2D" parent="." unique_id=658911604]
 
